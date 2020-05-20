@@ -1,0 +1,58 @@
+div#root {
+    width: 60%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+body div#root h1 {
+    justify-content: center;
+    display: flex;
+}
+
+body div#root form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body div#root form section {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+}
+
+body div#root form section#section-password label {
+    cursor: pointer;
+    text-decoration: underline dotted;
+}
+body div#root form section#section-btn {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+body div#root form section#section-btn button {
+    width: 150px;
+    height: 30px;
+}
+body div#root form section label {
+    margin-bottom: 2px;
+}
+
+body div#root form section p {
+    height: 14px;
+    line-height: 14px;
+    margin: 0 0 5px 0;
+    color: red;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+body div#root form section + section {
+    padding-top: 0;
+}

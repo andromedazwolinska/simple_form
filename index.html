@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple_form</title>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id='root'>
+        <h1>Simple Registeration Form</h1>
+        <form id='form'>
+            <section id='section-email'>
+                <label>Email: *</label>
+                <input name='email' type='email' onblur="validateEmail()" />
+                <p hidden id='email-error'></p>
+            </section>
+            <section id='section-password'>
+                <label title='Minimum eight characters, at least one letter and one number.&#xA;No alphanumeric characters allowed.'>
+                    Password: *
+                </label>
+                <input
+                    name='password'
+                    type='password'
+                    onblur="validatePassword()"
+                />
+                <p hidden id='password-error'></p>
+            </section>
+            <section id='section-btn'>
+                <button onclick='onSubmitClick()' id='submit-button' type='button'>Submit</button>
+            </section>
+        </form>
+    </div>
+</body>
+
+</html>
